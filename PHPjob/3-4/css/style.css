@@ -1,0 +1,21 @@
+body {
+  background-color: #808080;
+}
+
+.heading {
+  border-bottom: 5px solid #fff;
+  margin-top: 100px;
+}
+
+.center-white {
+  text-align: center;
+  color: #fff;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.name_input {
+  padding: 4px;
+}
