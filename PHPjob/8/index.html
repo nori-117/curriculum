@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        th, td {
+            padding : 10px;
+        }
+
+        #text_jpn, #text_en {
+            display: none;
+        }
+        #text_jpn.selected,  #text_en.selected{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <select id="select_box" onchange="changeLang()">
+        <option id="select">選択してください</option>
+        <option id="selected_jpn" value="japanese">日本語</option>
+        <option id="selected_en" value="english">English</option>
+        <option id="selected_all" value="all">全て表示</option>
+    </select>
+    <table>
+        <tr id="text_jpn">
+            <th>日本</th>
+            <td>こんにちは</td>
+            <td>ありがとう</td>
+            <td>さようなら</td>
+        </tr>
+        <tr id="text_en">
+            <th>English</th>
+            <td>Hello</td>
+            <td>Thank you</td>
+            <td>Good Bye</td>
+        </tr>
+    </table>
+
+    <script>
+        //①onchangeで使用されている関数の中身を実装してください。
+
+        const japaneseText = document.getElementById('text_jpn');
+        const englishText = document.getElementById('text_en');
+
+        function changeLang() {
+
+            // 選択されたoptionのvalue値を取得
+            let selectedLang = document.getElementById('select_box').value;
+
+            if(selectedLang === 'all') {
+                japaneseText.classList.add('selected');
+                englishText.classList.add('selected');
+
+            } else if(selectedLang === 'japanese') {
+                japaneseText.classList.add('selected');
+                englishText.classList.remove('selected');
+
+            } else if(selectedLang === 'english') {
+                japaneseText.classList.remove('selected');
+                englishText.classList.add('selected');
+
+            } else {
+                japaneseText.classList.remove('selected');
+                englishText.classList.remove('selected');
+            }
+        }
+    </script>
+</body>
+</html>
