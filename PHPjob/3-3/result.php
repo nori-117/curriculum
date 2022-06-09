@@ -13,7 +13,7 @@ $random_number = mt_rand(0, $number_length - 1);
 $fortune_number = substr($input_number, $random_number, 1);
 
 // ０：凶、１〜３：小吉、４〜６、中吉、７〜８：吉、９：大吉、に当てはめる
-if($fortune_number === 0) {
+if($fortune_number == 0) {
   $fortune = "凶";
 } else if($fortune_number >= 1 && $fortune_number <= 3) {
   $fortune = "小吉";
