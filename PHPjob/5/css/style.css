@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* 共通 */
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+/* 全体 */
+.l-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+/* ログイン画面見出し */
+.login-heading {
+  display: flex;
+  align-items: center;
+}
+.login-heading a {
+  display: block;
+  width: 150px;
+  color: #fff;
+  background-color: #5eb3e8;
+  border-radius: 3px;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+/* ログイン・新規登録フォーム・本登録共通 */
+.login-form {
+  margin-top: 10px;
+}
+.login-form input, .login-form select {
+  display: block;
+  margin-top: 15px;
+  border-radius: 3px;
+  padding: 10px;
+}
+.login-form input[type=text], .login-form input[type=password] {
+  width: 400px;
+  border: 1px solid #ddd;
+}
+.login-form input[type=submit] {
+  width: 200px;
+  color: #fff;
+  background-color: #4593c4;
+  border: none;
+  cursor: pointer;
+}
+.login-form input[type=submit]:hover {
+  opacity: 0.7;
+}
+.login-form select {
+  width: 300px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+.login-form p {
+  margin-top: 15px;
+}
+
+/* 在庫一覧画面 */
+.buttons {
+  display: flex;
+  margin-top: 10px;
+}
+.buttons a {
+  display: block;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 3px;
+}
+.buttons .signup {
+  background-color: #4593c4;
+}
+.buttons .logout {
+  background-color: #49545a;
+  margin-left: 20px;
+}
+
+/* 表 */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 20px;
+}
+.table th {
+  border: 1px solid #adadad;
+  background-color: #d7d7d7;
+  padding: 15px;
+}
+.table td {
+  border: 1px solid #adadad;
+  padding: 15px;
+}
+
+/* 削除ボタン */
+.delete-button {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #da3333;
+  border-radius: 3px;
+}
+
+/* ログアウト画面 */
+.logout-message {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.back-button {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
