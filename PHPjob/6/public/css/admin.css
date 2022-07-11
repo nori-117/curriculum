@@ -1,0 +1,73 @@
+/* ヘッダー */
+.navbar-brand {
+  color: gray;
+}
+.nav-link {
+  color: gray;
+}
+
+/* 全体 */
+h2 {
+  font-size: 20px;
+}
+
+/* 投稿作成部分 */
+.create {
+  padding: 15px;
+  border: 1px solid gray;
+  background-color: #fff;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+textarea {
+  width: 100%;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+/* 投稿リスト */
+.posts {
+  margin-top: 30px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  padding: 15px;
+  border: 1px solid gray;
+  background-color: #fff;
+}
+
+.post-list li+li {
+  border-top: none;
+}
+
+.post-list .data01 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-list .data01 span:nth-child(1) {
+  font-weight: bold;
+}
+
+.post-list .data02 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.delete-button {
+  color: red;
+  min-width: 30px;
+}
